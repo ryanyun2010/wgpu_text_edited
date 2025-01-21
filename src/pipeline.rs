@@ -58,7 +58,7 @@ impl Pipeline {
                 compilation_options: Default::default(),
             },
             primitive: wgpu::PrimitiveState {
-                topology: wgpu::PrimitiveTopology::TriangleList,
+                topology: wgpu::PrimitiveTopology::TriangleStrip,
                 strip_index_format: Some(wgpu::IndexFormat::Uint32),
                 ..Default::default()
             },
